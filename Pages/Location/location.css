@@ -1,0 +1,300 @@
+.loaction {
+  transition: all 0.6s;
+}
+
+main {
+  width: 100%;
+}
+
+.loaction h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.locationNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.locationNav ul {
+  width: 30%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.locationNav ul li {
+  min-width: 140px;
+  height: 37px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #172139;
+  transition: all 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.locationNav ul li.active {
+  transition: all 0.8s;
+  background-color: #172139;
+  color: #fff;
+}
+
+.createLocation {
+  cursor: pointer;
+  width: 286px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #172139;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.createLocation span {
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.adder {
+  position: absolute;
+  opacity: 0;
+  display: none;
+  transition: all 1s;
+  top: 20%;
+  left: 15%;
+}
+
+.editor {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+  top: 20%;
+  left: 45%;
+}
+
+.open {
+  display: block;
+  opacity: 1;
+  top: 20%;
+  left: 15%;
+}
+
+.openEditor {
+  display: block;
+  opacity: 1;
+  top: 20%;
+  left: 45%;
+}
+
+.adder form,
+.editor form {
+  transition: all 1s;
+  width: 440px;
+  height: 504px;
+  padding: 25px 15px 25px 15px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: none;
+}
+
+.adder form input,
+.editor form input {
+  margin: 10px 0;
+  padding: 17px 25px;
+  width: 360px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #aeaeae;
+}
+
+.adder form select,
+.editor form select {
+  margin: 10px 0;
+  width: 360px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #aeaeae;
+  color: #aeaeae;
+}
+
+.adder form .custom-select,
+.editor form .custom-select {
+  position: relative;
+  display: inline-block;
+  width: 360px;
+}
+
+.adder form .custom-select select,
+.editor form .custom-select select {
+  width: 100%;
+  padding: 10px;
+  padding-right: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+}
+
+.adder form .custom-select::after,
+.editor form .custom-select::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #ff6600;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.adder form input::placeholder,
+.editor form input::placeholder {
+  color: #aeaeae;
+  font-size: 16px;
+}
+
+.adder form .vlock,
+.editor form .vlock,
+.adder form .ulock,
+.editor form .ulock {
+  width: 360px;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0 10px;
+}
+
+.adder form .vlock .clicker,
+.editor form .vlock .clicker,
+.adder form .ulock .clicker,
+.editor form .ulock .clicker {
+  width: 52px;
+  height: 28px;
+  border-radius: 53px;
+  background-color: #efefef;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.adder form .vlock .clicker .round,
+.editor form .vlock .clicker .round,
+.adder form .ulock .clicker .round,
+.editor form .ulock .clicker .round {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #797979;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.adder form .vlock .clicker .round.on,
+.editor form .vlock .clicker .round.on,
+.adder form .ulock .clicker .round.on,
+.editor form .ulock .clicker .round.on {
+  background-color: #ff6600;
+  transform: translateX(18px);
+  transition: all 0.5s;
+}
+
+.adder form div,
+.editor form div {
+  width: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.editor form {
+  height: 655px;
+}
+
+.editor form label {
+  color: #172139;
+  display: flex;
+  flex-direction: column;
+}
+
+.createAdd {
+	cursor: pointer;
+	width: 193px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #172139;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	line-height: 16.41px;
+	img {
+		margin-right: 10px;
+	}
+}
+
+.delete {
+  cursor: pointer;
+	width: 195px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 5px;
+  background-color: #ffffff;
+  border: 1px solid #172139;
+	color: #172139;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	line-height: 16.41px;
+	img {
+		margin-right: 10px;
+	}
+}
+
+.create {
+	cursor: pointer;
+  margin-top: 10px;
+	width: 360px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #172139;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	line-height: 16.41px;
+	img {
+		margin-right: 10px;
+	}
+}
+
+.cancel {
+	cursor: pointer;
+	width: 151px;
+	height: 50px;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: 16.41px;
+	border: 1px solid #172139;
+	background-color: #ffffff;
+	color: #172139;
+}

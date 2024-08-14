@@ -1,0 +1,107 @@
+main {
+  width: 100%;
+}
+
+.options h2 {
+  font-size: 32px;
+}
+
+.optionsNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  ul {
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    li {
+      min-width: 140px;
+      height: 37px;
+      border-radius: 5px;
+      padding: 10px;
+      background-color: #ffffff;
+      color: #172139;
+      transition: all 0.8s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .active {
+    transition: all 0.8s;
+    background-color: #172139;
+    color: #fff;
+  }
+}
+
+.options main {
+  margin-top: 25px;
+}
+
+.head tr th {
+  min-width: 100px;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16.9px;
+}
+
+.head tr .first {
+  border-right: 1px dotted #c4c4c4;
+  width: 369px;
+}
+
+.tablica {
+  margin-top: 10px;
+}
+
+.tablica tr {
+  height: 60px;
+  border-radius: 5px;
+}
+
+.odd {
+  background-color: #ffffff;
+}
+
+.tablica tr td {
+  text-align: center;
+  font-size: 14px;
+}
+
+.tablica tr td:first-child {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  position: relative;
+  top: 20px;
+}
+
+.tablica tr td:first-child img:first-child {
+  margin-right: 5px;
+}
+
+.tablica tr td:first-child img:last-child {
+  margin-left: 5px;
+}
+
+.addTd {
+  margin-top: 10px;
+  width: 255px;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #172139;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  line-height: 16.5px;
+  span {
+    font-size: 18px;
+    margin-right: 5px;
+    font-weight: 500;
+  }
+}

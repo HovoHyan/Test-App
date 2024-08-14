@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../Location/location.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="loaction">
+      <header>
+        <h2>Локации / Все локации</h2>
+        <nav class="locationNav">
+          <ul class="locationList">
+            <li>Все локации</li>
+            <li>Импорт/Экспорт</li>
+            <li>Настройки</li>
+          </ul>
+        </nav>
+      </header>
+      <button class="createLocation"><span>+</span> Создать локацию</button>
+    </div>
+    <div class="adder">
+      <form>
+        <h2>Создать локацию</h2>
+        <input type="text" placeholder="Название" name="title" />
+        <input type="text" placeholder="Штрихкод" name="code" />
+        <input type="text" placeholder="RFID" name="rfid" />
+        <div class="custom-select">
+          <select name="any" id="any">
+            <option value="1">Вложенность</option>
+            <option value="2">Вложенность</option>
+          </select>
+        </div>
+        <div class="vlock">
+          Виртуальная локация
+          <div class="clicker">
+            <div class="round"></div>
+          </div>
+        </div>
+        <div class="ulock">
+          Локация для утерь
+          <div class="clicker">
+            <div class="round"></div>
+          </div>
+        </div>
+        <div>
+          <button class="createAdd">
+            <img src="../Assets/Сохранить.png" alt="Save" />Создать
+          </button>
+          <button class="cancel">Отменить</button>
+        </div>
+      </form>
+    </div>
+    <div class="editor">
+      <form>
+        <h2>Изменить локацию %название%</h2>
+        <label for="title">
+          Название
+            <input type="text" placeholder="Локация 11" name="title" />
+        </label>
+        <label for="code">
+          Штрихкод
+            <input type="text" placeholder="1123123123123" name="code" />
+        </label>
+        <label for="rfid">
+          RFID
+            <input type="text" placeholder="1123123123123" name="rfid" />
+        </label>
+        <div class="custom-select">
+          Вложенность
+          <select name="any" id="any">
+            <option value="1">Лoкaция1</option>
+            <option value="2">Лoкaция2</option>
+            <option value="3">Лoкaция3</option>
+            <option value="4">Лoкaция4</option>
+          </select>
+        </div>
+        <div class="vlock">
+          Виртуальная локация
+          <div class="clicker">
+            <div class="round"></div>
+          </div>
+        </div>
+        <div class="ulock">
+          Локация для утерь
+          <div class="clicker">
+            <div class="round"></div>
+          </div>
+        </div>
+        <div>
+          <button class="delete">
+            <img src="../Assets/closeX.png" alt="Delete" />Удалить
+          </button>
+          <button class="cancel">Отменить</button>
+        </div>
+        <button class="create">
+          <img src="../Assets/Сохранить.png" alt="Save" />Создать
+        </button>
+      </form>
+    </div>
+    <script src="../Location/loaction.js"></script>
+  </body>
+</html>
